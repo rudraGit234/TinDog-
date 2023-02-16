@@ -1,0 +1,244 @@
+/* better to make the css in the sequence of html to make it more organised */
+body {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+
+/* It is better to use classes and container divs for changes in css as against using the whole element. Keeps code readable */
+/* To target a specfic class or id of a specific div use the syntax of parent(id name)(class name) then properties**/
+ /* one can organise the various classes by combining the selectors by using hiearchical and combined selectors */
+
+h1 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+
+
+
+}
+
+h2{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+
+
+}
+
+h3 {
+    /*just used h3 instead of making a class from the element*/
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
+    font-size: 1.5rem;
+
+
+
+}
+
+p {
+    /* to give lighter color to lines and make headings shine */
+    color: #8f8f8f;
+}
+
+
+
+/* navigation bar */
+
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    /* color more effective here  */
+}
+
+
+.container-fluid {
+    /* the container fluid class of bootstrap is edited to increase the sizing of the div, it is customizable as well as interactive */
+    padding: 3% 15% 90px;
+}
+
+
+.navbar {
+    padding: 0 0 4.5rem;
+    /* this will keep the navbar line aligned with the title section line */
+
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: ;
+}
+
+
+/* Download buttons */
+
+/* a custom class made from the previous bootstrap class to avoid future issues. Yes it can be made. Can customize the bootstrap class but making new class better even if it is from old class*/
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* title-image */
+
+.title-image {
+    width: 22%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
+
+        /*equivalent to 45 degree rotate right, if in negative then it will rotate left */
+}
+
+
+/* features */
+
+
+#features {
+    /* to get more space between and make it look free */
+    padding: 7% 15%;
+    background-color: white;
+    /* the postion here is used to cover the photo image of dog  */
+    position: relative;
+}
+
+.features-box {
+    /** class of the column**/
+    text-align: center;
+    padding: 3%;
+    /**added padding to make more space between text to make it more readable and get in two lines**/
+
+}
+
+.feature {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.feature:hover {
+    color: #ff4c88;
+}
+
+#testimonials{
+    background-color: #ef8172;
+        text-align: center;
+    color: #fff;
+
+
+}
+
+.carousel-item{
+    padding: 7% 15%;
+
+
+}
+
+.testimonials-image{
+    width:10% ;
+    border-radius: 100%;
+    /* the border radius is used to chnage the border sharpness so that it can adjust to the size wanted */
+margin: 20px;
+
+
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+  
+}
+
+.press-image {
+    width: 15%;
+    margin: 20px 20px 50px;
+    /* top, left-right  and bottom  this margin size means. It goes clockwise top, right, bottom, left  if all margin side values are written*/
+}
+
+/* princing section */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+    
+}
+ 
+.addition-p{
+    padding-bottom: 41px;
+    /* additonal class for readjustment of card 1 and 2 to get it on same level as card 3 */
+}
+
+@media (max-width: 1000px){
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+    #title{
+        text-align: center;
+    }
+
+    
+}
+
+/* call to action section */
+
+#cta{
+
+    /* to make the whole sections text in center just align the whole id */
+    background-color: #ff4c68;
+    padding: 7% 15%;
+    text-align: center;
+    color: white;
+
+
+}
+
+   .h3-class{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+  
+   
+}
+
+
+
+/* footer section */
+
+#footer{
+    background-color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+
+.icons2{
+color: black;
+margin: 20px 10px;
+}     
+
+.lastp{
+    padding-top: 20px;
+}
+

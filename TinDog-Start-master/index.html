@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!--the folowing should be the order of the links - font, bootstrap, css stylesheet, font awesome, javascript, will add more in future -->
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- bootstrap and css style sheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome link for unique icon addition-->
+  <script src="https://kit.fontawesome.com/5e75d1a534.js" crossorigin="anonymous"></script>
+
+
+
+  <!-- javascript connect -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid ">
+      <!--container fuid used to add interactive div and full screen and can also edit this in css section to change sizing -->
+      <!-- Nav Bar -->
+      <nav class="navbar  navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="#">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <!--This is for the collapse of button when screen small then toggle button will appear -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- the aria label used is for visaully imapiared people -->
+
+
+          <ul class="navbar-nav ms-auto"> <!--m means margin and s means start aka left -->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacts</a>
+              <!-- Here i have used an id in the href tag as id can be used as a link to jummp through web pages -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Downloads</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+
+            </li>
+
+            <li class="nav-item dropdown"> <!--Introduces drop down menu in the navbar -->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Options
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dates</a></li>
+                <li><a class="dropdown-item" href="#">Preferences</a>
+                  <ul> <!-- ul inside ul for nesting-->
+
+                    <li><a class="dropdown-item" href="#">Pomerian</a></li>
+                    <li><a class="dropdown-item" href="#">Doberman</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#features">About</a></li>
+              </ul>
+            </li>
+          </ul>
+
+      </nav>
+
+
+
+
+
+      <!-- Title -->
+
+      <div class="row ">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <!-- the i element here is for the icon from fonts awesome -->
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+              class="fa-brands fa-google-play"></i> Download</button>
+
+        </div>
+
+        <div class="col-lg-6 ">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <!--here i could have used only div to get the text in middle other than using container fluid class -->
+      <div class="col-lg-4 features-box">
+        <i class="fa-solid fa-circle-check fa-4x feature"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="col-lg-4 features-box">
+        <i class="fa-solid fa-bullseye fa-4x feature"></i>
+        <!-- the fa-4x is used as per font awesomes documentation -->
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="col-lg-4 features-box">
+        <i class="fa-solid fa-heart fa-4x feature"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
+          <!-- i have used em here becuase it is an inline-block display element -->
+          <em>Pebbles, New York</em>
+
+
+        </div>
+        <div class="carousel-item">
+          <h2>My dog used to be so lonely, but with TinDog's help, they've found the love of
+            their life. I think.</h2>
+          <img class="testimonials-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em><strong>Beverly, Illinois</strong>
+
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <!-- use ctrl + alt + down to use multiple cursors in different line -->
+    <img class="press-image" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-image" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-image" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-image" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+
+      <div class="pricing-column col-md-6 col-lg-4 col-sm-12 ">
+        <!-- lg, md and sm here denote the width of the screen and how the components will be distrubuted as the size of screen from the size of 12 -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p class="addition-p">Unlimited App Usage</p>
+            <!-- here to get the full width of btn i used w width 100 -->
+            <button type="button" class=" btn w-100 btn-outline-dark btn-lg">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- need to use card class for every section which is to be displayed -->
+      <div class="pricing-column col-md-6 col-lg-4 col-sm-12">
+
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <!-- the class here is added to get the card box lined up in the same height as card 3 -->
+            <p class="addition-p">Unlimited App Usage</p>
+            <button type="button" class=" btn w-100 btn-dark btn-lg">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+      <div class=" pricing-column col-md-12 col-lg-4  col-sm-12">
+
+        <div class="card">
+
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class=" btn w-100 btn-dark btn-lg">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="h3-class">Find the True Love of Your Dog's Life Today.</h3>
+
+    <button type="button" class="download-button btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i>
+      Download</button>
+    <button type="button" class="download-button btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i>
+      Download</button>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <!-- i have inserted target attribute to open the twitter website in new tab of the server -->
+      <a class="icons2" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <!-- in the anchor element keep watch on the syntax of class and href -->
+      <a class="icons2" href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a class="icons2" href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a class="icons2" href="#"><i class="fa-solid fa-envelope"></i></a>
+      <p class="lastp">© Copyright 2022 TinDog</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
